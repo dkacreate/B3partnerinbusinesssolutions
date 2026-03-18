@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3 Partner In Business Solutions - Bewindvoering & Budgetbeheer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0a192f',
+                            light: '#112a4f',
+                            dark: '#050d18'
+                        },
+                        gold: {
+                            DEFAULT: '#eab308',
+                            hover: '#facc15',
+                            dark: '#ca8a04'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::selection {
+            background-color: #eab308;
+            color: #0a192f;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-navy text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-3">
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-bold text-gold tracking-tighter">B3</span>
+                        </div>
+                        <div class="hidden sm:flex flex-col justify-center">
+                            <span class="text-sm font-semibold tracking-widest uppercase text-white leading-tight">Partner In</span>
+                            <span class="text-xs tracking-widest uppercase text-gold leading-tight">Business Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#diensten" class="text-sm uppercase tracking-wider hover:text-gold transition-colors">Diensten</a>
+                    <a href="#werkwijze" class="text-sm uppercase tracking-wider hover:text-gold transition-colors">Werkwijze</a>
+                    <a href="#over-mij" class="text-sm uppercase tracking-wider hover:text-gold transition-colors">Over Mij</a>
+                    <a href="#contact" class="bg-gold text-navy px-5 py-2 rounded font-semibold uppercase tracking-wider text-sm hover:bg-gold-hover transition-colors">Contact</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gold hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-navy border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#diensten" class="block px-3 py-2 text-base font-medium hover:text-gold mobile-link">Diensten</a>
+                <a href="#werkwijze" class="block px-3 py-2 text-base font-medium hover:text-gold mobile-link">Werkwijze</a>
+                <a href="#over-mij" class="block px-3 py-2 text-base font-medium hover:text-gold mobile-link">Over Mij</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gold mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-navy text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6">
+                    Financiële rust en zekerheid, <br/>
+                    <span class="text-gold">samen lossen we het op.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl">
+                    B3 Partner In Business Solutions biedt betrouwbare bewindvoering, budgetbeheer en schuldstabilisatie. Wij nemen de postblokkade over, creëren overzicht en begeleiden u naar een zorgeloze toekomst.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="flex items-center justify-center gap-2 bg-gold text-navy px-8 py-4 rounded font-bold uppercase tracking-wider hover:bg-gold-hover transition-colors">
+                        Direct Hulp Aanvragen <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#diensten" class="flex items-center justify-center gap-2 border-2 border-slate-500 text-white px-8 py-4 rounded font-bold uppercase tracking-wider hover:border-gold hover:text-gold transition-colors">
+                        Lees Meer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                <div class="p-6">
+                    <div class="mx-auto w-16 h-16 bg-slate-50 text-navy rounded-full flex items-center justify-center mb-4 shadow-sm border border-slate-100">
+                        <i class="fa-solid fa-handshake-angle text-3xl text-gold-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Persoonlijk & Betrokken</h3>
+                    <p class="text-slate-600">Vaste contactpersoon (Gerda) die naast u staat, niet oordeelt en uw belangen voorop stelt.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mx-auto w-16 h-16 bg-slate-50 text-navy rounded-full flex items-center justify-center mb-4 shadow-sm border border-slate-100">
+                        <i class="fa-solid fa-shield-halved text-3xl text-gold-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">Rust & Bescherming</h3>
+                    <p class="text-slate-600">Wij fungeren als schild. We nemen de post over en automatiseren betalingen zodat u rust ervaart.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mx-auto w-16 h-16 bg-slate-50 text-navy rounded-full flex items-center justify-center mb-4 shadow-sm border border-slate-100">
+                        <i class="fa-solid fa-mobile-screen-button text-3xl text-gold-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 font-serif">24/7 Transparantie</h3>
+                    <p class="text-slate-600">Altijd online inzicht in uw inkomsten, uitgaven en actuele saldo via onze veilige portal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diensten" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold tracking-widest uppercase text-gold-dark mb-2">Onze Expertise</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-navy">Hoe wij u kunnen helpen</h3>
+                <div class="w-24 h-1 bg-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-navy rounded-bl-full z-0 transform translate-x-12 -translate-y-12 group-hover:scale-110 transition-transform"></div>
+                    <i class="fa-solid fa-shield-halved text-4xl text-gold relative z-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold font-serif mb-4 relative z-10">Beschermingsbewind</h4>
+                    <p class="text-slate-600 mb-6 relative z-10">
+                        Wanneer u door lichamelijke of geestelijke toestand niet in staat bent uw eigen financiën te beheren. Via de kantonrechter nemen wij de verantwoordelijkheid over, met volledige transparantie en jaarlijkse verantwoording.
+                    </p>
+                    <ul class="space-y-2 relative z-10">
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Betalen vaste lasten</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Postverwerking & Administratie</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Optimalisatie toeslagen</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-navy rounded-bl-full z-0 transform translate-x-12 -translate-y-12 group-hover:scale-110 transition-transform"></div>
+                    <i class="fa-solid fa-wallet text-4xl text-gold relative z-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold font-serif mb-4 relative z-10">Budgetbeheer</h4>
+                    <p class="text-slate-600 mb-6 relative z-10">
+                        Heeft u moeite om maandelijks rond te komen of overzicht te houden? Wij beheren uw inkomsten, zorgen dat de vaste lasten betaald worden en u ontvangt een afgesproken bedrag aan leefgeld.
+                    </p>
+                    <ul class="space-y-2 relative z-10">
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Voorkomen van schulden</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Reserveren voor onvoorziene kosten</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Overzicht en stabiliteit</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-navy rounded-bl-full z-0 transform translate-x-12 -translate-y-12 group-hover:scale-110 transition-transform"></div>
+                    <i class="fa-regular fa-file-lines text-4xl text-gold relative z-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold font-serif mb-4 relative z-10">Schuldstabilisatie</h4>
+                    <p class="text-slate-600 mb-6 relative z-10">
+                        Bij problematische schulden is structuur nodig. Wij fungeren als aanspreekpunt voor schuldeisers, stabiliseren uw situatie en bereiden, indien mogelijk, een schuldhulpverleningstraject voor.
+                    </p>
+                    <ul class="space-y-2 relative z-10">
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Inventarisatie van schulden</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Contact met schuldeisers & incasso's</li>
+                        <li class="flex items-start gap-2 text-sm text-slate-700"><i class="fa-solid fa-circle-check text-gold-dark mt-1"></i> Trajectbegeleiding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="werkwijze" class="py-20 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold tracking-widest uppercase text-gold mb-2">Onze Werkwijze</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold">De route naar financiële stabiliteit</h3>
+                <div class="w-24 h-1 bg-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-yellow-700 transform -translate-y-1/2 z-0"></div>
+
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 relative z-10">
+                    <div class="w-12 h-12 bg-gold text-navy rounded-full flex items-center justify-center font-bold text-xl mb-4 mx-auto md:mx-0">1</div>
+                    <h4 class="text-xl font-bold font-serif text-gold mb-3 text-center md:text-left">Bewustwording</h4>
+                    <p class="text-sm text-slate-300 text-center md:text-left">U merkt dat u het overzicht kwijt bent. Via een eerste, vrijblijvend contact bespreken we uw situatie op een veilige manier.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 relative z-10">
+                    <div class="w-12 h-12 bg-gold text-navy rounded-full flex items-center justify-center font-bold text-xl mb-4 mx-auto md:mx-0">2</div>
+                    <h4 class="text-xl font-bold font-serif text-gold mb-3 text-center md:text-left">Intake & Evaluatie</h4>
+                    <p class="text-sm text-slate-300 text-center md:text-left">Tijdens een face-to-face of video call analyseren we de behoeften. We maken een inschatting van de situatie en het plan van aanpak.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 relative z-10">
+                    <div class="w-12 h-12 bg-gold text-navy rounded-full flex items-center justify-center font-bold text-xl mb-4 mx-auto md:mx-0">3</div>
+                    <h4 class="text-xl font-bold font-serif text-gold mb-3 text-center md:text-left">Start Samenwerking</h4>
+                    <p class="text-sm text-slate-300 text-center md:text-left">Formele kick-off en onboarding. Aanvraag bij de kantonrechter of opstart budgetbeheer. De postblokkade gaat in, wat direct rust geeft.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 relative z-10">
+                    <div class="w-12 h-12 bg-gold text-navy rounded-full flex items-center justify-center font-bold text-xl mb-4 mx-auto md:mx-0">4</div>
+                    <h4 class="text-xl font-bold font-serif text-gold mb-3 text-center md:text-left">Stabiliteit & Toekomst</h4>
+                    <p class="text-sm text-slate-300 text-center md:text-left">Vaste kwartaalmeetings, 24/7 inzicht en continue optimalisatie. Van opluchting naar een gegarandeerde stabiele, vertrouwde situatie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="over-mij" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold rounded-full transform translate-x-4 translate-y-4"></div>
+                        
+                        <div class="relative z-10 aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl bg-slate-200">
+                            rond de img tag hieronder -->
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-100 flex-col p-4 text-center">
+                                <span class="text-sm uppercase tracking-widest">[Foto Gerda]</span>
+                                <span class="text-xs text-slate-500 mt-2">Zet hier 'Foto ma.png' in de code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-sm font-bold tracking-widest uppercase text-gold-dark mb-2">Wie ben ik?</h2>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-6">Gerda Bindesrisingh</h3>
+                    <p class="text-xl text-slate-700 mb-6 italic">Oprichter van B3 Partner In Business Solutions</p>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Vanuit een diepe betrokkenheid bij de medemens heb ik B3 Partner In Business Solutions opgericht. Ik zie dagelijks hoe financiële problemen het leven van mensen kunnen beheersen, resulterend in stress, slapeloosheid en het gevoel vast te zitten in de bureaucratie.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Mijn doel is niet alleen om de financiële administratie weer op orde te krijgen, maar vooral om de <strong>mens achter de cijfers weer rust te geven</strong>. Door de complexe post, lastige telefoontjes met deurwaarders en instanties over te nemen, fungeer ik als uw schild. U staat er niet meer alleen voor. Met een oordeelvrije, transparante en oplossingsgerichte aanpak werken we samen aan een stabiel toekomstperspectief.
+                    </p>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded bg-navy flex items-center justify-center">
+                            <span class="text-2xl font-bold text-gold">B3</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy">Betrokken, Betrouwbaar, Beschermend.</h4>
+                            <p class="text-sm text-slate-500">Uw partner in financiële oplossingen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+                
+                <div class="bg-navy text-white p-10 lg:w-2/5 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-gold rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-serif font-bold mb-2">Neem Contact Op</h3>
+                        <p class="text-slate-300 mb-10">Zet vandaag nog de stap naar rust in uw hoofd. Neem vrijblijvend contact op voor een kennismaking.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-phone text-gold mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Telefoon</h4>
+                                    <p class="text-lg">+31 (0)6 1234 5678</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-envelope text-gold mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-400">E-mail</h4>
+                                    <p class="text-lg break-all">info@b3partnerinbusinesssolutions.nl</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-globe text-gold mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Website</h4>
+                                    <p class="text-lg break-all">www.b3partnerinbusinesssolutions.nl</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-400">Kantoor</h4>
+                                    <p class="text-lg">Op afspraak<br/><span class="text-sm text-slate-400">(Nederland)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 relative z-10 pt-8 border-t border-slate-700">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-gold font-bold">G</div>
+                            <div>
+                                <p class="font-semibold">Gerda Bindesrisingh</p>
+                                <p class="text-sm text-gold">Oprichter / Bewindvoerder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-10 lg:w-3/5">
+                    <h3 class="text-2xl font-bold text-navy mb-6">Stuur een bericht</h3>
+                    <form class="space-y-6" action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Naam</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded border border-slate-300 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors" placeholder="Uw volledige naam" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Telefoonnummer</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded border border-slate-300 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors" placeholder="Uw telefoonnummer">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">E-mailadres</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded border border-slate-300 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors" placeholder="uw.naam@voorbeeld.nl" required>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-slate-700 mb-2">Onderwerp</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 rounded border border-slate-300 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors bg-white">
+                                <option>Vraag over Beschermingsbewind</option>
+                                <option>Vraag over Budgetbeheer</option>
+                                <option>Algemene vraag / Kennismaking</option>
+                                <option>Anders</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Bericht</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded border border-slate-300 focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-colors resize-none" placeholder="Waarmee kunnen wij u helpen?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-navy text-white font-bold py-4 rounded uppercase tracking-widest hover:bg-navy-light transition-colors focus:ring-4 focus:ring-slate-300">
+                            Verstuur Bericht
+                        </button>
+                        <p class="text-xs text-slate-500 text-center mt-4">Uw gegevens worden vertrouwelijk en veilig behandeld.</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-bold text-gold tracking-tighter mr-2">B3</span>
+                        <span class="text-sm font-semibold tracking-widest uppercase text-white leading-tight">Partner In Business Solutions</span>
+                    </div>
+                    <p class="text-sm">Professionele bewindvoering en budgetbeheer. Wij creëren overzicht, stabiliteit en rust voor uw financiële situatie.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold uppercase tracking-wider mb-4">Snelle Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#diensten" class="hover:text-gold transition-colors">Diensten</a></li>
+                        <li><a href="#werkwijze" class="hover:text-gold transition-colors">Werkwijze</a></li>
+                        <li><a href="#over-mij" class="hover:text-gold transition-colors">Over Gerda</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold uppercase tracking-wider mb-4">Juridisch</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-gold transition-colors">Privacyverklaring</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Algemene Voorwaarden</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Klachtenregeling</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> B3 Partner In Business Solutions. Alle rechten voorbehouden.</p>
+                <p class="mt-2 md:mt-0">KVK: [KVK Nummer]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // Sluit menu als op een linkje geklikt wordt (mobiel)
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
